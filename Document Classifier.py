@@ -1,9 +1,5 @@
 
 # coding: utf-8
-
-# In[2]:
-
-
 get_ipython().run_line_magic('matplotlib', 'inline')
 import json
 import tensorflow as tf
@@ -26,6 +22,7 @@ from sklearn.model_selection import KFold
 from sklearn.metrics import classification_report
 
 ##################################################################################################
+# 문서 데이터 Merging & Preprocessing
 
 with open('Tr.json', encoding="utf-8-sig") as Tr_data_file:    
     Tr_data = json.load(Tr_data_file)
